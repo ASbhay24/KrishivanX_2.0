@@ -138,7 +138,7 @@ if st.session_state.current_page == "landing":
         st.markdown('<div style="text-align:center;">', unsafe_allow_html=True)
         
         try:
-            st.image("D://KrishivanX//Tractor.PNG", width=250) 
+            st.image("Tractor.PNG", width=250) 
         except:
             st.image("https://cdn-icons-png.flaticon.com/512/2153/2153106.png", width=150)
             
@@ -321,4 +321,5 @@ elif st.session_state.current_page == "app":
                                 st.markdown(f"**A:**\n{it['response']}")
                                 
                 except Exception as e: st.error(f"Failed to fetch records: {e}")
+
             else: st.warning("Database connection is missing.")
